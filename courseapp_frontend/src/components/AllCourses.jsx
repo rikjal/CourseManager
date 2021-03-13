@@ -31,7 +31,7 @@ const AllCourses = () => {
             <h2>All Courses</h2>
             <p>List of courses:</p>
             {
-                courses.length > 0 ? courses.map( ( item ) => <Course key={item.id} course={item} update={updateCourses} /> ) : "No Course Found"
+                courses.length > 0 ? courses.map( ( item ) => <Course key={item.id} course={item} update={updateCourses} /> ).reverse() : "No Course Found"
             }
 
         </div>
