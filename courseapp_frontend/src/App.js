@@ -1,6 +1,5 @@
 import {ToastContainer} from 'react-toastify'
 import {Col, Container, Row} from 'reactstrap'
-import './App.css'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import AddCourse from './components/AddCourse'
 import AllCourses from './components/AllCourses'
@@ -22,8 +21,8 @@ function App() {
             </Col>
             <Col md={8}>
               <Route exact path="/" component={Home} />
-              <Route exact path="/add-course" component={AddCourse} />
-              <Route exact path="/view-courses" component={AllCourses} />
+              <Route path="/add-course" component={AddCourse} />
+              <Route path="/view-courses" component={AllCourses} />
               <Route
                 path='/update-course'
                 component={UpdateCourse} />
