@@ -18,7 +18,6 @@ const AddCourse = () => {
     async function postData( data ) {
         await axios.post( `${base_url}/courses`, data ).then(
             ( response ) => {
-                console.log( response )
                 setCourse( {title: '', description: ''} )
                 toast.dark( "Course has been added!", {position: 'bottom-right'} )
                 history.push( `/view-courses` )
